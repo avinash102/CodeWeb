@@ -1,0 +1,364 @@
+/**********************************/
+/***** REUSABLE *******/
+/*******************************/
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-size:20px;
+    font-weight:400;
+    font-family:'Raleway',sans-serif;
+    background-color: #fff;
+    text-rendering:optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    width:1140px;
+    margin:0 auto;
+}
+
+/**********************************/
+/***** HEADER *******/
+/*******************************/
+
+header{
+    border-bottom:1px solid #dddddd;
+}
+
+h1{
+    margin:0;
+    position:absolute;
+    top:8%;
+    left:42%;  
+    font-weight:300;
+    font-size:270%;
+    letter-spacing:-3.5px;
+    color:#555555;
+}
+
+h2{
+    font-size:195%;
+    font-weight:400;
+    color:#5d5d5d;
+    margin-bottom:25px;
+    margin-top:20px;
+    text-align: center;
+    
+}
+
+h2:after{
+    content:" ";
+    display: block;
+    height:2px;
+    width:100px;
+    background-color: #505050;
+    margin: 0 auto;
+    margin-top:15px;
+}
+
+/**********************************/
+/***** NAVIGATION *******/
+/*******************************/
+
+/* Main Navigation  */
+
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top:25px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-right:25px;
+}
+
+ .main-nav li a:link,
+ .main-nav li a:visited{      
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:90%;
+    font-weight:400;
+    color:#575757;
+    border-bottom: 2px solid transparent;  
+    padding:8px 0px;
+    -webkit-transition:border-bottom 0.3s,color 0.3s;
+    transition: border-bottom 0.3s,color 0.3s;   
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid #dd3333;
+    color:#141414;
+}
+
+.logo-black{
+    height:60px;
+    width:auto;
+    float:left;
+    margin-top:5px;
+}
+
+.new-head{
+    display:inline-block;
+    margin:12px;
+    text-decoration: none;
+    font-weight:300;
+    font-size:180%;
+    letter-spacing:-1.2px;
+    color:#414141;  
+}
+
+/* Sticky Navigation   */
+
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:65px;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0px 2px 2px #ddd;
+    box-shadow: 0 2px 2px #ddd;
+    z-index: 9999;
+    transition:  .4s;
+}
+
+.sticky .main-nav{
+    list-style: none;
+    float: right;
+    margin-top:25px;
+}
+
+.sticky .main-nav li{
+    display:inline-block;
+    margin-right:25px;
+}
+
+    
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{      
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:90%;
+    font-weight:400;
+    color:#575757;
+    border-bottom: 2px solid transparent;  
+    padding:8px 0px;
+    -webkit-transition:border-bottom 0.3s,color 0.3s;
+    transition: border-bottom 0.3s,color 0.3s;   
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active{
+    border-bottom:2px solid #dd3333;
+    color:#141414;
+}
+
+.sticky .logo-black{
+    height:60px;
+    width:auto;
+    float:left;
+    margin-top:5px;
+}
+
+.sticky .new-head{
+    display:inline-block;
+    margin:12px;
+    text-decoration: none;
+    font-weight:300;
+    font-size:180%;
+    letter-spacing:-1.2px;
+    color:#414141;
+    
+}
+
+/***** MOBILE-NAVI *******/
+
+.mobile-nav-icon{
+    cursor: pointer;
+    margin-top:25px;
+    display:none;       
+}
+
+.mobile-nav-icon i{
+    color: #5c5c5c;
+    font-size:200%;
+}
+
+
+
+
+
+/**********************************/
+/***** ABOUT *******/
+/*******************************/
+.section-about{
+    background-color: #f7f7f7;
+}
+
+.content{
+    margin:60px 0px;;
+    text-align: justify;
+    height:460px;
+    padding:60px 0px;
+    border-radius:20px;
+    background-color:#fff;
+    -webkit-box-shadow:1px 2px 12px 0px rgba(50,50,50,0.35);
+    box-shadow:1px 2px 12px 0px rgba(50,50,50,0.35);
+}
+
+.image{
+   float:left; 
+   margin-left:80px;
+    
+}
+
+
+
+.image img{
+    display:block;
+    height:160px;
+    width:175px;
+    margin-left:15px;
+    background-color:#fff;
+    background-size:cover;
+    background-position:center;
+    border-radius:50%;
+}
+
+
+
+.ion-ios-email-outline{
+    font-size:200%;
+    margin:10% 35% 0px ;
+    float:left;
+}
+
+#mail{
+    display: block;
+    float:left;
+    padding-top:10px;
+    color:#0e5a76;
+    border-bottom:2px solid #0e5a76;
+}
+
+
+.span{
+    display:block;
+    float:left;
+    margin-top:15%;
+    font-size:50%;
+}
+
+.About{
+    width:60%;
+    float:left;
+    margin-left:30px;
+}
+
+
+.skill{
+    font-size:100%;
+    line-height:135%;
+    margin-top:2%;
+}
+
+/**********************************/
+/***** footer *******/
+/*******************************/
+
+footer {
+    width:100%;
+    font-size:80%;
+    padding:20px;
+    border-top:1px solid #e0dfdf;
+    background-color:#ffffff;
+    -webkit-box-shadow:0px 2px 2px #ddd;
+    box-shadow:0px 2px 2px #ddd;
+}
+.footer-nav{
+    float:left;
+    list-style:none;
+}
+.social-icon{
+    float:right;
+    list-style:none;
+}
+
+.footer-nav li,
+.social-icon li{
+    display:inline-block;
+    margin-right:30px;
+}
+
+.footer-nav li:last-child,
+.social-icon li:last-child{
+    margin-right:0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    font-size:120%;
+    font-weight:500;
+    text-decoration: none;
+    color:#5a5a5a;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#0a0a0a;
+    border-bottom:2px solid #5c5c5c;
+}
+
+.social-icon li a:link,
+.social-icon li a:visited{
+    font-size:200%;
+}
+.ion-social-facebook,
+.ion-social-github,
+.ion-social-linkedin{
+    color:#6c6c6c;
+    -webkit-transition:color 0.2s;
+    transition: color 0.2s;
+}
+.ion-social-facebook:hover{
+    color:#3b5999;
+}
+
+.ion-social-github:hover{
+    color:#040204;
+}
+
+.ion-social-linkedin:hover{
+    color:darkgrey;
+}
+
+
+
+
+/**********************************/
+/***** JavaScript *******/
+/*******************************/
+
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity:0;
+    animation-duration: 1.5s;
+}
+
+.js--wp-4{
+    opacity:1;
+    animation-duration: 2s;
+}
